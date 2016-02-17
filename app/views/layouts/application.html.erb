@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlogApp</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="navbar">
+    <div class="header-left">
+      <h2>Blog App</h2>
+    </div>
+    <div class="header-right">
+        <% if user_signed_in? %>
+        <ul>
+            <li><strong><%= link_to current_user.email,edit_user_registration_path %></strong></li>
+            <li><%= link_to 'プロフィール変更', edit_user_registration_path %></li>
+            <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to '新規投稿', new_note_path %></li>
+            <li><%= link_to '投稿一覧', notes_path %></li>
+        <% else %>
+            <li><%= link_to 'サインアップ', new_user_registration_path %></li>
+            <li><%= link_to 'ログイン', new_user_session_path %></li>
+            <li><%= link_to 'Top', root_path %></li>
+        <% end %>
+        </ul>
+        </div>
+</header>
+
+ <p class="notice"><%= notice %></p>
+ <p class="alert"><%= alert %></p>
+<%= yield %>
+
+</body>
+</html>

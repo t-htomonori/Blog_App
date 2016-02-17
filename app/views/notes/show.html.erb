@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <div class="note_title">
+  <%= @note.title %>
+  </div>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <div class="note_content">
+  <%= @note.content %>
+  </div>
+</p>
+
+<p>
+<strong>Image:</strong>
+<div class="note_image">
+ <%= @note.image %>
+ <% if @note.image? %>
+<%= image_tag @note.image.url %>
+　<% else %>
+　　<%= image_tag 'noimage.gif' %>
+　<% end %>
+ </div>
+</p>
+<div class="note_edit">
+<%= link_to "編集", edit_note_path(@note.id), class: "btn edit-btn" %>
+<%= link_to '戻る', notes_path, class: "btn destroy-btn" %>
+</div>
+

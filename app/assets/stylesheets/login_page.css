@@ -1,0 +1,52 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#particles{
+	height: 720px;
+	position: relative;
+}
+.box1{
+	height: 300px;
+	width: 200px;
+	background-color:#FFFF99;
+	display: block;
+	position: absolute;
+	text-align: center;
+	left: 41%;
+	top: 28%;
+	opacity: 0.8;
+	border-radius: 20px;
+}
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.primary-btn {
+  width: 200px;
+  background-color:#FFFF99;
+  float: left;
+}
+.primary-btn:hover{
+	background-color: #239b76;
+	transition:1s;
+}
+.sign_up-btn {
+  width: 150px;
+  background-color:#FFFF99;
+  float: left;
+}
+.sign_up-btn:hover{
+	background-color: #239b76;
+	transition:1s;
+}
+.field{
+	font-size: 17px;
+}

@@ -1,0 +1,77 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  margin-bottom: 20px;
+}
+.header-left{
+	float: left;
+	height: 65px;
+	color: white;
+}
+.header-left h2{
+	margin: 15px;
+}
+.header-right {
+  float: right;
+  margin: 0 auto;
+}
+.header-right a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.header-right li {
+  line-height: 65px;
+  padding: 0 18px;
+  float: left;
+  color: white;
+  list-style-type: none;
+  border-left: 1px solid white;
+}
+p {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.update-btn{
+ width: 150px;
+  background-color:#28b086;
+  float: left;
+}
+
+.update-btn:hover {
+  background-color: blue;
+  transition:1s;
+}
+.cancel-btn{
+  width: 200px;
+  background-color:#28b086;
+  float: left;
+  text-align: center;
+  margin-left: 20px;
+}
+.cancel-btn:hover {
+  background-color:red;
+  transition:0.8s;
+}
+
+/*cubeのレイアウト*/
+.cube{
+	background-color:none;
+	text-align: center;
+	margin-top: 180px;
+}
+
+.toplogin-btn {
+  width: 100px;
+  background-color:#239b76;
+  text-decoration: none;
+}
+.toplogin-btn:hover{
+	background-color:#4169e1;
+	transition:1s;
+}

@@ -1,0 +1,49 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#particles{
+	height: 750px;
+	position: relative;
+}
+.box1{
+	padding-top:20px;
+	height: 310px;
+	width: 300px;
+	background-color:#FFFF99;
+	display: block;
+	position: absolute;
+	text-align: center;
+	left: 37%;
+	top: 30%
+}
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+.primary-btn {
+  width: 300px;
+  background-color:#FFFF99;
+  float: left;
+}
+.primary-btn:hover{
+	background-color: #239b76;
+	transition:1s;
+}
+.login-btn {
+  width: 250px;
+  background-color:#FFFF99;
+  float: left;
+  margin-top: 20px;
+}
+.login-btn:hover{
+	background-color: #239b76;
+	transition:1s;
+}

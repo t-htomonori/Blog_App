@@ -1,0 +1,120 @@
+// Place all the styles related to the notes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.btn {
+  padding: 8px 24px;
+  color: black;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 「投稿する」「保存」ボタン */
+.posting-btn {
+  width: 250px;
+  background-color:#28b086;
+  float: left;
+  margin:60px;
+}
+
+.posting-btn:hover {
+  background-color: blue;
+  transition:1s;
+}
+.form-control{
+	display: block;
+	width: 100%;
+	font-size: 18px;
+}
+.title-field{
+	height: 30px;
+	width: 400px;
+}
+.content-field{
+	height: 200px;
+	width: 400px;
+}
+.save-btn{
+  width: 100px;
+  background-color: #239b76;
+  margin-left: 120px;
+}
+.save-btn:hover{
+  background-color: blue;
+  transition:1s;
+}
+/*投稿の一覧*/
+.notes {
+  margin: 0;
+}
+
+.notes td{
+  overflow: auto;
+  padding: 0 0 10px 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #eaeaea;
+}
+.posting-title{
+  text-decoration: none;
+}
+.edit-btn{
+  width: 40px;
+  background-color:#28b086;
+  float: left;
+  margin:30px;
+  text-decoration: none;
+}
+.edit-btn:hover{
+  background-color: blue;
+  transition:1s;
+}
+.destroy-btn{
+  width: 40px;
+  background-color:#28b086;
+  float: left;
+  margin:30px;
+  text-decoration: none;
+}
+.destroy-btn:hover{
+  background-color: red;
+  transition:1s;
+}
+.newpost-btn {
+  width: 100px;
+  background-color:#28b086;
+  float: left;
+  margin:60px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.newpost-btn:hover {
+  background-color: blue;
+  transition:1s;
+}
+/*投稿内容*/
+.note_title{
+	height: 30px;
+	width: 500px;
+}
+.note_content{
+	height: 100px;
+	width: 600px;
+}
+.note_image{
+	height: 700px;
+	width: 800px;
+}
+.note_edit{
+	height: 100px;
+	width: 400px;
+	float: left;
+}
+
+.index-btn{
+  margin-left: 30px;
+  text-decoration: none;
+}
