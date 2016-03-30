@@ -20,7 +20,7 @@
 }
 .btn {
   padding: 8px 24px;
-  color: white;
+  color: gray;
   display: inline-block;
   opacity: 0.8;
   border-radius: 3px;
@@ -37,11 +37,13 @@
 .primary-btn:hover{
 	background-color: #239b76;
 	transition:1s;
+	color: white;
 }
 .sign_up-btn {
   width: 150px;
   background-color:#FFFF99;
   float: left;
+  text-decoration: none;
 }
 .sign_up-btn:hover{
 	background-color: #239b76;
@@ -49,4 +51,9 @@
 }
 .field{
 	font-size: 17px;
+}
+
+.forget_pass:hover{
+	background-color:black;
+	color: white;
 }

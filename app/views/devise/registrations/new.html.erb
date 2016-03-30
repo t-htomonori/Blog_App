@@ -5,12 +5,14 @@
   <link rel="stylesheet" type="text/css" href="/assets/sign_up.scss">
 </head>
 <body>
+<div class="error">
+<%= devise_error_messages! %>
+</div>
 <div id="particles">
 <div class="box1">
 <h2>新規登録</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
 
   <div class="field">
     <%= f.label :email, "メールアドレス" %><br />

@@ -26,9 +26,9 @@
       <%= image_tag @note.image.url %>
     </div>
   <% end %><br>
-    <%= f.label :image, "画像を投稿" %><br>
+   <!-- <%= f.label :image, "画像を投稿" %><br>
     <%= f.file_field :image %>
-    <%= f.hidden_field :image_cache %>
+    <%= f.hidden_field :image_cache %> -->
   </div>
   <div class="actions">
     <%= f.submit "投稿する", class: "btn posting-btn" %>

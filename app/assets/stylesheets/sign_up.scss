@@ -2,21 +2,25 @@
 	margin: 0px;
 	padding: 0px;
 }
-
+.error{
+	height: 100px;
+	width: 500px;
+	position: relative;
+}
 #particles{
 	height: 750px;
 	position: relative;
 }
 .box1{
 	padding-top:20px;
-	height: 310px;
+	height: 320px;
 	width: 300px;
 	background-color:#FFFF99;
 	display: block;
 	position: absolute;
 	text-align: center;
 	left: 37%;
-	top: 30%
+	top: 30%;
 }
 .btn {
   padding: 8px 24px;
@@ -32,6 +36,8 @@
   width: 300px;
   background-color:#FFFF99;
   float: left;
+  color: gray;
+  font-size: 18px;
 }
 .primary-btn:hover{
 	background-color: #239b76;
@@ -42,6 +48,7 @@
   background-color:#FFFF99;
   float: left;
   margin-top: 20px;
+  text-decoration: none;
 }
 .login-btn:hover{
 	background-color: #239b76;

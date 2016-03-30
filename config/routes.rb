@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :notes
   devise_for :users
   get 'home/index'
+  get '/education' => 'home#education'
+  get '/study' => 'home#study'
 
   root to: "home#index"
   # The priority is based upon order of creation: first created -> highest priority.

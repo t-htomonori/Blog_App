@@ -9,20 +9,18 @@
 	window.onload = function(){
 
 	var settings = {
-		interval : 1500, // cube繧貞�縺咎俣髫�
-		dur : 30000, // 	cube縺梧戟邯壹☆繧区凾髢�
+		interval : 1000, 
+		dur : 40000, 
 		windowWidth : $(window).width(),
 		windowHeight : $(window).height()
 	}
 	
-	// cube縺ｮ譛邨ゅせ繧ｿ繧､繝ｫ險ｭ螳�
 	var styleFor = {
-		height : 22, // cube縺ｮ鬮倥＆
-		width : 22, // cube縺ｮ蟷�
-		'border-width' : 10 // cube縺ｮ鄂ｫ邱壼ｹ�
+		height : 22, 
+		width : 22, 
+		'border-width' : 10 
 	}
 	
-	// cube縺ｮ蛻晄悄繧ｹ繧ｿ繧､繝ｫ險ｭ螳�
 	var styleInit = {
 		position:'absolute',
 		'z-index' : 1,
@@ -82,7 +80,6 @@
 		}
 	}
 
-
 	// execute
 	cube.init();
 	setInterval(function(){
@@ -93,9 +90,32 @@
 
 	</script>
 <div class="cube">
-	<h2><br>ようこそ、Blog Appへ</h2>
-	<p><br>Blog Appは、登録すれば記事を投稿したりすることができます。<br>記事には、文章はもちろん画像も投稿することができるので自由に投稿してみてください。<br>また、これまで投稿された文章も確認することができるのでブログとしても活用することができます。<br>それでは、このプカプカ浮いてるキューブたちと一緒に楽しんでください。</p>
-	<br><%= link_to 'ログイン', new_user_session_path, class: "btn toplogin-btn" %>
+	<h1><br>ようこそ、E & Sへ</h1>
+	<p><br>E & Sは、Education(教育)とStudy(勉強)の略称です。<br>
+	ここでは、<span>教育に関する情報</span>や<span>勉強の効率を向上させる方法</span>、心理学などを用いた教育、<br><span>暗記科目の効率的な勉強の仕方</span>など様々な情報を手に入れることができます。<br>
+	そして、ご登録していただければ「みんなのQ & A」のコーナーで質問等をすることができます。<br>
+	あなたがこのサイトを利用することで、今まで学校では教わることのなかった情報に出会うことができます。<br>
+	それを利用して、ぜひ<span>「勉強や教育はこんなにも楽しいものなのか！」</span><br>
+	と、思っていただきたいです。<br>
+	<span>あなたという存在をもう一段階レベルアップさせましょう！</span><br>
+	以下からEducation(教育)またはStudy(勉強)のどちらかを選んでみてください。</p>
+	<br>
 	</div>
+<div class="contents">
+	<div class="circle1">
+		<%= link_to image_tag('/assets/study.png', class: "image_study"), education_path %>
+		<p>Education</p>
+	</div>
+	<div class="circle2">
+		<%= link_to image_tag('/assets/education.png', class: "image_education"), study_path %>
+		<p>Study</p>
+	</div>
+</div>
+<div class="footer">
+	<h1>〜お問い合わせ〜</h1>
+	<ul>
+		<li>Email : t.hnori0429@gmail.com</li>
+	</ul>
+</div>
 	</body>
 </html>
