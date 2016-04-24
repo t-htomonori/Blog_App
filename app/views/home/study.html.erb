@@ -6,14 +6,6 @@
 	<link rel="stylesheet" href="/assets/study.scss">
 </head>
 <body>
-<script>
-	$('head').append(
-'<style type="text/css">body {display:none;}'
-);
-$(window).load(function() {
-$('body').delay(100).fadeIn("slow");
-});
-</script>
 	<div class="sidebar">
 		<%= link_to "勉強とは？", study_path, class: "sidemenu" %>
 		<%= link_to "効率的な勉強法", study_path, class: "sidemenu" %>
