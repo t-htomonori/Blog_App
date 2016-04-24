@@ -348,7 +348,7 @@ a:visited {
 /* line 26, /vagrant/blog_app/app/assets/stylesheets/scaffolds.scss */
 a:hover {
   color: #fff;
-  background-color: blue;
+  background-color:none;
   transition: 1s;
 }
 
